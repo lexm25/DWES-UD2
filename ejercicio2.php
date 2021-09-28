@@ -10,17 +10,20 @@
     <?php
         $base = 6;
         $altura = 9;
-        $radio = 8.2;
+        $areaTriangulo = ($base * $altura) / 2;
+        echo "El área del triángulo es: ", $areaTriangulo," cm <p><p>";
+
+        $areaCuadrado = $base * $altura;
+        echo "El área del cuadrado es: ", $areaCuadrado," cm <p><p>";
+        
         $diagonalMayor = 7;
         $diagonalMenor = 5;
-        $areaTriangulo = ($base * $altura) / 2;
-        $areaCuadrado = $base * $altura;
         $areaRombo = ($diagonalMayor * $diagonalMenor)/2;
+        echo "El área del rombo es: ", $areaRombo," cm <p><p>";
+        
+        $radio = 8.2;
         define("PI",3.14159265359);
         $areaCirculo = PI * $radio * $radio;
-        echo "El área del triángulo es: ", $areaTriangulo," cm <p><p>";
-        echo "El área del cuadrado es: ", $areaCuadrado," cm <p><p>";
-        echo "El área del rombo es: ", $areaRombo," cm <p><p>";
         echo "El área del círculo es: ", $areaCirculo," cm <p><p>";
     ?>
 </body>
