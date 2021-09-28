@@ -13,8 +13,8 @@
         $numeroPantCompr = 3;
         $numeroCamCompr = 2;
         $totalSin = ($precioPantalon * $numeroPantCompr) + ($precioCamisa * $numeroCamCompr);
-        $descuento = 0.08;
-        $totalCon = $totalSin - ($totalSin * $descuento);
+        define("DESCUENTO", 8);
+        $totalCon = $totalSin - ($totalSin * (DESCUENTO/100));
         echo "El precio de un pantalón es de: ", $precioPantalon,"€<p></p>";
         echo "El precio de una camisa es de: ", $precioCamisa,"€<p></p>";
         echo "El precio total sin descuento es de: ", $totalSin,"€<p></p>";
