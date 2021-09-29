@@ -27,7 +27,7 @@
         $precioZapatoCon += ($precioZapato - ($precioZapato * DESCUENTOZAPATERIA/100));
         echo "El precio de un zapato con descuento de 12% es de: ", sprintf("%01.2f", $precioZapatoCon), "€<p></p>";
         $cuenta += $totalCon + $precioZapatoCon;
-        echo "El total de la cuenta es de: ", sprintf("%01.2f", $cuenta), "€<p></p>";    
+        echo "El total de la cuenta es de: ", sprintf("%01.2f", $cuenta), "€<p></p>";
     ?>
 </body>
 </html>
